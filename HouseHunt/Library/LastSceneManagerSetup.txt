@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/_Scenes/Scene1.unity
+=======
+- path: Assets/Robbie/Scenes/Das Haus.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
