@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class GravityGun : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class GravityGun : MonoBehaviour
                     item.transform.SetParent(this.gameObject.transform);
                     item.GetComponent<Rigidbody>().isKinematic = true;
                     item.transform.position = itemLocation.transform.position;
+                    item.GetComponent<NavMeshAgent>().enabled = false;
                     hasItem = true;
 
                 }
@@ -52,6 +54,14 @@ public class GravityGun : MonoBehaviour
             item.GetComponent<Rigidbody>().isKinematic = false;
             hasItem = false;
             prevItem.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+        }
+        else if (Input.GetButtonDown("Fire2") && hasItem == true)
+        {
+            prevItem = item;
+            item.transform.parent = null;
+            item.GetComponent<Rigidbody>().isKinematic = false;
+            hasItem = false;
+            //prevItem.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
         }
     }
 }
