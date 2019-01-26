@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\wburke\\Desktop\\Personal\\GameJam\\GGJ_2019\\HouseHunt\\Assembly-CSharp.csproj",
+  "TargetFramework": "v4.7.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
